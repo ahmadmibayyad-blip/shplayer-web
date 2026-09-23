@@ -56,7 +56,7 @@ export default function TermsCondition() {
         <main class={`${styles.content}`}>
           <div dangerouslySetInnerHTML={{ __html: editorHtml }} />
         </main>
-        <FloatingWhatsApp phoneNumber="+1234567890"
+        <FloatingWhatsApp phoneNumber="+918904009505"
           accountName="WishTV"
           avatar={whatsapp}
           statusMessage="Typically replies within 1 hour"

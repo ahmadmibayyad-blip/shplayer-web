@@ -173,7 +173,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <FloatingWhatsApp phoneNumber="+1234567890"  // Replace with your WhatsApp number
+          <FloatingWhatsApp phoneNumber="+918904009505"  // Replace with your WhatsApp number
             accountName="SH Player"  // Customize with your name or business name
             avatar={logo} // Optional avatar or logo image
             statusMessage="Typically replies within 1 hour"

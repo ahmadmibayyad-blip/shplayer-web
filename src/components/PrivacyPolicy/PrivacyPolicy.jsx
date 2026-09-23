@@ -50,7 +50,7 @@ export default function PrivacyPolicy() {
       <div class={`${styles.privacyPolicy}`}>
         <div dangerouslySetInnerHTML={{ __html: editorHtml }} />
       </div>
-      <FloatingWhatsApp phoneNumber="+1234567890"
+      <FloatingWhatsApp phoneNumber="+918904009505"
         accountName="WishTV"
         avatar={whatsapp}
         statusMessage="Typically replies within 1 hour"

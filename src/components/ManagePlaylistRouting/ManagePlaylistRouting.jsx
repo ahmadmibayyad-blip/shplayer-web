@@ -26,7 +26,7 @@ function ManagePlaylistRouting() {
 
   return (
     <div className="min-h-screen bg-white">
-      <FloatingWhatsApp phoneNumber="+1234567890"
+      <FloatingWhatsApp phoneNumber="+918904009505"
         accountName="SH Player Support"
         avatar={whatsapp}
         statusMessage="Typically replies within 1 hour"
