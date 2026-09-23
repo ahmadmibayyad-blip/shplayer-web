@@ -1,0 +1,5 @@
+@media (max-width : 640px) {
+    .table_header {
+        width: 109% !important;
+    }
+}

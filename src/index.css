@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #0EA5E9;
+  --color-accent: #FF7A18;
+  --color-dark: #000000;
+  --font-sans: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: var(--color-dark);
+  color: white; */
+}
+
+.btn-primary {
+  @apply inline-block w-full text-center py-2.5 rounded-lg text-white font-medium;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+}
+
+.glass-navbar {
+  background-color: rgba(0,0,0,0.75);
+  backdrop-filter: blur(6px);
+}
+
+#sideBar {
+  width: 5.5vw;
+  overflow: hidden;
+  transition: .8s;
+  margin-right: auto;
+}
+
+#sideBar .NonActive {
+  @apply flex items-center gap-10 w-full;
+}
+
+#sideBar .listTitle {
+  visibility: hidden;
+}
+
+#sideBar .iconColor {
+  color: rgba(119, 164, 229, 1);
+}
+
+
+#sideBar:hover {
+  width: 21.5vw;
+  transition: .5s;
+}
+
+.Active {
+  @apply bg-white text-black rounded flex items-center p-3 gap-10 w-full;
+}
+
+#sideBar:hover .listTitle {
+  visibility: visible;
+}
+
+#sideBar:hover .iconColor {
+  color: inherit;
+}
+
+#sideBar ul {
+  @apply w-64 p-4 flex flex-col gap-4;
+}
+
+#sideBar ul li {
+  @apply gap-10;
+}
+
+#sideBar ul li a{
+  padding: 0.5rem 0.25rem;
+}
+#sideBar ul li a{
+  color: 0.5rem 0.25rem;
+}
+
+#sideBar ul li .icon-[tabler--logout-2]{
+  color: red;
+}
+
+#bcg {
+  padding: 40px;
+}
+
+.AccDetails {
+  @apply flex items-center justify-between;
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  #sideBar {
+    width: 100%;
+    overflow: visible;
+  }  
+
+  header{
+    margin-top: 12vh
+  }
+
+  #sideBar .NonActive,
+  #sideBar .Active {
+    @apply flex items-center gap-4 w-full p-3;
+  }
+
+  #sideBar .listTitle {
+    visibility: visible;
+  }
+
+  #sideBar ul {
+    @apply w-full gap-4;
+  }
+
+  #sideBar ul li {
+    @apply w-full;
+  }
+
+  /* Reset hover styles for mobile */
+  #sideBar:hover {
+    width: 100%;
+  }
+
+  #sideBar:hover .Active {
+    @apply bg-transparent text-white;
+  }
+
+  #sideBar ul li a:hover,
+  #sideBar ul li a.active {
+    background-color: white;
+    color: black;
+  }
+
+  #sideBar ul li a:hover .iconColor,
+  #sideBar ul li a.active:not(:hover) .iconColor {
+    color: rgba(119, 164, 229, 1);
+  }
+}
+
+#sideBar ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+#sideBar ul li a:hover .iconColor {
+  color: black;
+}
+
+#sideBar ul li a.active:not(:hover) .iconColor {
+  color: rgba(119, 164, 229, 1);
+}
+
+input{
+  border: none;
+}

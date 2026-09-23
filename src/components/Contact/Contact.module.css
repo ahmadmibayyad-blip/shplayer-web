@@ -1,0 +1,7 @@
+.Contact {
+    @apply bg-red-500 text-3xl
+}
+.contact_btn{
+    background-color: rgba(33, 56, 91, 1);
+}
+

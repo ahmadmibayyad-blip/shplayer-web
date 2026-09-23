@@ -1,0 +1,34 @@
+.privacyPolicy {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 105px;
+}
+.privacyPolicy h1 {
+    color: black;
+    font-size: 2rem;
+}
+.privacyPolicy h2 {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.privacyPolicy h1 {
+    text-align: center;
+}
+
+.privacyPolicy p {
+    margin-bottom: 15px;
+}
+
+.privacyPolicy ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.privacyPolicy li {
+    margin-bottom: 10px;
+}

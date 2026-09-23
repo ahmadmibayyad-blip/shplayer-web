@@ -1,0 +1,214 @@
+.home {
+  background-image: url('/src/assets/Image/manage_playlist_bg.png');
+  background-position: center;
+  background-size: cover;
+  height: 100vh !important;
+  min-height: 700px;
+  background-color: black;
+  z-index: 10;
+  margin-top: 0 !important;
+}
+
+@media (max-height: 560px) {
+  .home {
+   overflow: hidden; 
+  }
+  .wish_title{
+    margin-top: 40px !important;
+  }
+ 
+}
+.wish_title{
+  margin-top: 70px !important;
+}
+@media (max-width: 480px) {
+  .home {
+   height: 90vh !important;
+   
+  }
+  .wish_title{
+    margin-top: 20px !important;
+  }
+}
+.macaddres {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.856) 43.5%, rgba(0, 0, 0, 0) 100%);
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .macaddres {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+input {
+  width: 100%;
+  height: 2.5rem;
+}
+
+button {
+  width: 100%;
+  height: 2.5rem;
+}
+
+
+
+
+
+#login-form {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.637) 43.5%, rgba(0, 0, 0, 0) 100%);
+
+
+
+}
+
+@media (max-width: 768px) {
+  .home {
+    background-size: contain;
+    height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  Custom styles for mobile input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+    /* Only move halfway because we have 2 sets of images */
+  }
+}
+
+.marqueeWrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marqueeContent {
+  display: flex;
+  gap: 2rem;
+  animation: marquee 30s linear infinite;
+  /* Adjust speed as needed */
+  width: max-content;
+}
+
+.poster {
+  background-image: url("/src/assets/Image/wishtv.jpg");
+}
+
+.featuredRow {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+.featuredCard {
+  min-width: 180px;
+  height: 260px;
+  background: linear-gradient(180deg, rgba(10,10,10,0.6), rgba(0,0,0,0.9));
+  border-radius: 12px;
+  overflow: hidden;
+  flex: 0 0 auto;
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  padding: 12px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.featuredCard:hover{ 
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+
+.featuredCard img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.45) saturate(1.1);
+}
+
+.featuredCard .title{
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .poster {
+    background-size: cover !important;
+    background-position: center !important;
+    height: 57vh !important;
+  }
+}
+
+
+/* Mobile Screens (Small) */
+@media (max-width: 767px) {
+  header {
+    margin-top: 0px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .wish_responive {
+    margin-top: 90px !important;
+    height: 35vh !important;
+  }
+}
+
+.managePlaylist_title {
+  margin-top: 2rem !important;
+}
+
+@media (max-width: 767px) {
+  .managePlaylist_title {
+    margin-top: 56px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .wish_title {
+    font-size: 22px !important;
+  }
+
+}
+
+
+.slider_section {
+  direction: ltr !important;
+}
+.login_btn{
+  background-color: rgba(16, 59, 119, 1);
+}
